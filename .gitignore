@@ -3,3 +3,8 @@ wh.properties
 .DS_Store
 .gradle
 captures/
+
+*.iml
+build/
+local.properties
+.idea/

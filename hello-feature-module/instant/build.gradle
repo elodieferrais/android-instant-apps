@@ -20,12 +20,6 @@ android {
     compileSdkVersion rootProject.compileSdk
     buildToolsVersion rootProject.buildTools
 
-    defaultConfig {
-        minSdkVersion rootProject.minSdkInstant
-        targetSdkVersion rootProject.compileSdk
-        versionCode rootProject.versionCode
-        versionName rootProject.versionName
-    }
     buildTypes {
         minified {}
         debug {}

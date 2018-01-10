@@ -21,6 +21,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
+
+import butterknife.OnClick;
 
 /**
  * This Activity displays a simple hello world text.
@@ -40,6 +43,10 @@ public class HelloActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @OnClick(R2.id.button) public void click() {
+        Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
     }
 
 }
