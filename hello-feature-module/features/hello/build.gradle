@@ -15,7 +15,6 @@
  */
 
 apply plugin: 'com.android.feature'
-apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion rootProject.compileSdk
@@ -45,9 +44,6 @@ android {
 
 dependencies {
     implementation project(':features:base')
-
-    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-SNAPSHOT'
-    api 'com.jakewharton:butterknife:9.0.0-SNAPSHOT'
 
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
